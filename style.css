@@ -1,0 +1,50 @@
+@font-face {
+    src: url(futura/FuturaStd-Medium.otf);
+    font-family: Futura;
+}
+
+@font-face {
+    src: url(futura/FuturaStd-Bold.otf);
+    font-family: Futura;
+    font-weight: bold;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Futura;
+}
+
+.headline {
+    height: 50vh;
+    min-height: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5em;
+    color: #c0e7f1;
+    background-image: linear-gradient(#0084ce, #002e87);
+}
+
+.title {
+    font-weight: bold;
+    font-size: 3vw;
+    width: 50vw;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1.75vw;
+    width: 50vw;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: right;
+}
+
+.navbar>div {
+    font-size: 1vw;
+    padding: 0.6vw;
+}
