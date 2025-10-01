@@ -4,6 +4,7 @@
 <head>
     <title>NOAA Water Column Sonar Visualization</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="teamstyle.css">
 </head>
 
 <body>
@@ -24,49 +25,66 @@
         <div class="page-title">MEET THE TEAM</div>
     </div>
     <div class="body">
-        <div class="body-section">
-            <div>
-                <div class="title">THE PROBLEM</div>
-                <div class="text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin lacinia tempor. Maecenas
-                    eleifend, diam semper pellentesque gravida, dolor tellus posuere libero, ut ornare lorem dolor eget
-                    nulla. Nam dignissim lobortis neque, et tempor diam dignissim in. Aenean enim nisl, tristique vel
-                    congue vel, consectetur ut nunc. Donec erat urna, lacinia a sem in, bibendum dignissim eros. Vivamus
-                    ornare ante mi, quis molestie ipsum malesuada eu. Integer vestibulum sapien sit amet auctor
-                    convallis. Phasellus congue feugiat sapien nec vulputate. Sed vehicula viverra molestie. Ut in
-                    euismod purus. Nunc et magna magna. Etiam in suscipit lorem. Maecenas dapibus auctor lorem a auctor.
-                    Suspendisse potenti. Suspendisse ut enim congue, posuere velit vitae, fermentum metus. Mauris et
-                    dapibus tellus.
+        <button type="button" id="team-flip-button">Flip</button>
+        <div class="flip-card" id="team-flip">
+            <div class="flip-card-inner">
+                <div class="body-section flip-card-front" id="front">
+                    <img src="assets/images/echofish.jpeg" alt="Echofish">
+                    <div>
+                        <div class="title">Hi. I'm Caitlyn Nguyen</div>
+                        <div class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin lacinia tempor.
+                            Maecenas
+                            eleifend, diam semper pellentesque gravida, dolor tellus posuere libero, ut ornare lorem
+                            dolor
+                            eget
+                            nulla. Nam dignissim lobortis neque, et tempor diam dignissim in. Aenean enim nisl,
+                            tristique
+                            vel
+                            congue vel, consectetur ut nunc. Donec erat urna, lacinia a sem in, bibendum dignissim eros.
+                            Vivamus
+                            ornare ante mi, quis molestie ipsum malesuada eu. Integer vestibulum sapien sit amet auctor
+                            convallis. Phasellus congue feugiat sapien nec vulputate. Sed vehicula viverra molestie. Ut
+                            in
+                            euismod purus. Nunc et magna magna. Etiam in suscipit lorem. Maecenas dapibus auctor lorem a
+                            auctor.
+                            Suspendisse potenti. Suspendisse ut enim congue, posuere velit vitae, fermentum metus.
+                            Mauris et
+                            dapibus tellus.
+                        </div>
+                    </div>
+                </div>
+                <div class="body-section flip-card-back" id="back">
+                    <div>
+                        <div class="title">And I'm Logan Lessen</div>
+                        <div class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin lacinia tempor.
+                            Maecenas
+                            eleifend, diam semper pellentesque gravida, dolor tellus posuere libero, ut ornare lorem
+                            dolor
+                            eget
+                            nulla. Nam dignissim lobortis neque, et tempor diam dignissim in. Aenean enim nisl,
+                            tristique
+                            vel
+                            congue vel, consectetur ut nunc. Donec erat urna, lacinia a sem in, bibendum dignissim eros.
+                            Vivamus
+                            ornare ante mi, quis molestie ipsum malesuada eu. Integer vestibulum sapien sit amet auctor
+                            convallis. Phasellus congue feugiat sapien nec vulputate. Sed vehicula viverra molestie. Ut
+                            in
+                            euismod purus. Nunc et magna magna. Etiam in suscipit lorem. Maecenas dapibus auctor lorem a
+                            auctor.
+                            Suspendisse potenti. Suspendisse ut enim congue, posuere velit vitae, fermentum metus.
+                            Mauris et
+                            dapibus tellus.
+                        </div>
+                    </div>
+                    <img src="assets/images/atlantic-herring.jpg" alt="A bunch of Atlantic Herring">
                 </div>
             </div>
-            <img src="assets/images/echofish.jpeg" alt="Echofish">
         </div>
-        <div class="body-section">
-            <div>
-                <div class="title">OUR STATEMENT AND GOALS</div>
-                <div class="text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin lacinia tempor. Maecenas
-                    eleifend, diam semper pellentesque gravida, dolor tellus posuere libero, ut ornare lorem dolor eget
-                    nulla. Nam dignissim lobortis neque, et tempor diam dignissim in. Aenean enim nisl, tristique vel
-                    congue vel, consectetur ut nunc. Donec erat urna, lacinia a sem in, bibendum dignissim eros. Vivamus
-                    ornare ante mi, quis molestie ipsum malesuada eu. Integer vestibulum sapien sit amet auctor
-                    convallis. Phasellus congue feugiat sapien nec vulputate. Sed vehicula viverra molestie. Ut in
-                    euismod purus. Nunc et magna magna. Etiam in suscipit lorem. Maecenas dapibus auctor lorem a auctor.
-                    Suspendisse potenti. Suspendisse ut enim congue, posuere velit vitae, fermentum metus. Mauris et
-                    dapibus tellus.
-                </div>
-            </div>
-            <img src="assets/images/atlantic-herring.jpg" alt="A bunch of Atlantic Herring">
-        </div>
-    </div>
-    <div class="sources">
-        <div class="title">RESOURCES USED</div>
-        <img src="assets/images/resources.png" alt="Source">
-        <div class="text">Slack / Github / Python / Astral UV / Pytest</div>
-        <div class="text">Xarray / Zarr / Zarrita / AWS</div>
-        <div class="text">NodeJS / Vite / React / RTKQuery / React-Three-Fibre + ThreeJS</div>
     </div>
     <script src="main.js"></script>
+    <script src="team.js"></script>
 </body>
 
 </html>
