@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>NOAA Water Column Sonar Visualization</title>
@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <div class="navbar">
+    <nav class="navbar">
         <div class="image-link">
             <a href="index.html">
                 <img src="assets/images/noaa-logo.png" alt="NOAA Logo">
@@ -20,19 +20,19 @@
         <div class="link"><a href="progress.html">PROGRESS</a></div>
         <div class="link"><a href="portfolio.html">PORTFOLIO</a></div>
         <div class="link"><a href="resources.html">RESOURCES</a></div>
-    </div>
-    <div class="headline">
-        <div class="page-title">MEET THE TEAM</div>
-    </div>
-    <div class="body">
+    </nav>
+    <header class="headline">
+        <h1 class="page-title">MEET THE TEAM</h1>
+    </header>
+    <main class="body">
         <button type="button" id="team-flip-button">Flip</button>
         <div class="flip-card" id="team-flip">
             <div class="flip-card-inner">
-                <div class="body-section flip-card-front" id="front">
+                <section class="body-section flip-card-front" id="front">
                     <img src="assets/images/echofish.jpeg" alt="Echofish">
                     <div>
-                        <div class="title">Hi. I'm Caitlyn Nguyen</div>
-                        <div class="text">
+                        <h3 class="title">Hi. I'm Caitlyn Nguyen</h3>
+                        <p class="text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin lacinia tempor.
                             Maecenas
                             eleifend, diam semper pellentesque gravida, dolor tellus posuere libero, ut ornare lorem
@@ -51,13 +51,13 @@
                             Suspendisse potenti. Suspendisse ut enim congue, posuere velit vitae, fermentum metus.
                             Mauris et
                             dapibus tellus.
-                        </div>
+                        </p>
                     </div>
-                </div>
-                <div class="body-section flip-card-back" id="back">
+                </section>
+                <section class="body-section flip-card-back" id="back">
                     <div>
-                        <div class="title">And I'm Logan Lessen</div>
-                        <div class="text">
+                        <h3 class="title">And I'm Logan Lessen</h3>
+                        <p class="text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin lacinia tempor.
                             Maecenas
                             eleifend, diam semper pellentesque gravida, dolor tellus posuere libero, ut ornare lorem
@@ -76,13 +76,13 @@
                             Suspendisse potenti. Suspendisse ut enim congue, posuere velit vitae, fermentum metus.
                             Mauris et
                             dapibus tellus.
-                        </div>
+                        </p>
                     </div>
                     <img src="assets/images/atlantic-herring.jpg" alt="A bunch of Atlantic Herring">
-                </div>
+                </section>
             </div>
         </div>
-    </div>
+    </main>
     <script src="main.js"></script>
     <script src="team.js"></script>
 </body>
