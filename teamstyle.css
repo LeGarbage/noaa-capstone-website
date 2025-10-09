@@ -1,11 +1,14 @@
 .flip-card {
     perspective: 1000px;
+    display: flex;
+    align-items: center;
 }
 
 .flip-card-inner {
     position: relative;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    z-index: -1;
 }
 
 .flip-card.flipped .flip-card-inner {
@@ -26,4 +29,13 @@
     transform: rotateY(180deg);
     position: absolute;
     top: 0;
+}
+
+button {
+    position: absolute;
+    font-family: inherit;
+    background-color: inherit;
+    border: 0;
+    font-size: 10em;
+    color: var(--blue);
 }
