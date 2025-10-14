@@ -151,7 +151,38 @@ body {
     object-fit: scale-down;
 }
 
+.footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2em;
+    background-image: linear-gradient(var(--blue), var(--dark-blue));
+    color: var(--light-blue);
+    padding: 2em
+}
+
+.footer>div {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.footer button {
+    background-color: var(--orange);
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.5em;
+    align-self: center;
+    border-radius: 0.1em;
+}
+
 @media only screen and (max-width: 600px) {
+    .headline {
+        height: 30vh;
+        min-height: 50vw;
+    }
+
     .navbar {
         flex-direction: column;
     }
@@ -164,6 +195,14 @@ body {
 
     .navbar>div {
         display: none;
+    }
+
+    .navbar>div.open {
+        display: initial;
+    }
+
+    .navbar>div.link {
+        font-size: 2.15vw;
     }
 
     .headline {

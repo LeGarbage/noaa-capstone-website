@@ -31,7 +31,7 @@
     top: 0;
 }
 
-button {
+.flip-card button {
     position: absolute;
     font-family: inherit;
     background-color: inherit;

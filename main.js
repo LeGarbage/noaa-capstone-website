@@ -1,7 +1,5 @@
 const elements = document.querySelectorAll(".navbar>div")
-
 const navbar = document.querySelector(".navbar")
-
 const headline = document.querySelector(".headline")
 
 const observer = new IntersectionObserver(entries => {
@@ -19,3 +17,10 @@ const observer = new IntersectionObserver(entries => {
 })
 
 observer.observe(headline)
+
+const hamburgerButton = document.getElementById("hamburger-button")
+
+hamburgerButton.addEventListener('click', () => {
+    navbar.classList.toggle('open')
+    elements.forEach(e => e.classList.toggle('open'))
+})
