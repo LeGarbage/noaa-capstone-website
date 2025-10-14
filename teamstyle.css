@@ -39,3 +39,14 @@
     font-size: 10em;
     color: var(--blue);
 }
+
+@media only screen and (max-width: 600px) {
+    .flip-card button {
+        display: none;
+    }
+
+    .flip-card-back {
+        position: initial;
+        transform: rotateY(0deg);
+    }
+}
