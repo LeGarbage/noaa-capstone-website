@@ -3,7 +3,7 @@ const navbar = document.querySelector(".navbar")
 const headline = document.querySelector(".headline")
 
 const observer = new IntersectionObserver(entries => {
-    entry = entries[0]
+    const entry = entries[0]
 
     if (entry.isIntersecting) {
         elements.forEach(e => e.classList.remove('dark'))
