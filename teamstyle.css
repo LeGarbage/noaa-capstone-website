@@ -1,3 +1,7 @@
+.body-section .image-container {
+    width: 100%;
+}
+
 .flip-card {
     perspective: 1000px;
     display: flex;

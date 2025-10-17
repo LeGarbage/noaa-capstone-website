@@ -1,0 +1,10 @@
+* THIS IS A WEBSITE
+
+** Hosting
+This website is hosted using Github Pages at =legarbage.github.io/noaa-capstone-website/=
+
+** Technologies
+This website was built using vanilla HTML, CSS, and JavaScript
+
+** Usage
+Navigate to [[legarbage.github.io/noaa-capstone-website/][legarbage.github.io/noaa-capstone-website/]] in your browser
