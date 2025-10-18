@@ -1,1 +1,45 @@
-* test
+* Work Completed
+  Most of my time spent this week has been on this website. From last week's 
+  build, I have made the mobile version actually usable, although it is not as 
+  good as it could be.
+
+  Today, I moved the entire website over to Vite in order to accommodate this 
+  new progress report system. It was pretty easy to get things moved over, 
+  although I did have to do a little restructuring of the code and do some 
+  Vite-specific configuration to get the entire site loaded and not just one 
+  page.
+
+  Hopefully this pays off in the future, as we will be able to write our 
+  progress reports in a more human-friendly format, saving us time and 
+  effort in the future, as well as accommodating external tools, such 
+  as Notion for Caitlyn and Org-mode for me.
+
+* Challenges
+** Vite
+   As I said, the biggest challenge was getting this report system done. 
+   Switching to Vite was almost perfectly smooth, although I had to play 
+   with some configuration to get the multi-page application working.
+
+   Also, I had to play around with getting the JavaScript included in 
+   the build, as the basic non-module scripts were not being included 
+   unless I marked them as modules as well.
+
+** Report System
+   Again, this system was a pain to set up, especially with GitHub 
+   Pages' static site requirement, meaning the reports had to be 
+   built into the static site, hence the Vite requirement.
+
+   The other reason I needed Vite was to be able to use the 
+   necessary modules to parse and convert Markdown and Org 
+   files to HTML.
+
+** CSS
+   Need I say more?
+
+* What Next?
+  Now that the website is (mostly) finished, I can return to the 
+  Water Column front end, where my next step will be to integrate 
+  an actual API into the Redux Store, in this case a Pokemon API.
+
+  Once I can combine external data with Redux, I will then work on 
+  dealing with the actual Water Column data.

@@ -1,0 +1,74 @@
+#reports {
+    font-family: system-ui, sans-serif;
+    background: var(--light-blue);
+    color: var(--main-font);
+    line-height: 1.7;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2rem 1rem 4rem;
+}
+
+.week-section {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem 1.8rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.week-heading {
+    font-size: 1.4rem;
+    color: var(--blue);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 0.4rem;
+    font-weight: 600;
+}
+
+.person-heading {
+    font-size: 1.15rem;
+    color: var(--main-font);
+    margin-top: 1.4rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.report-content {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+}
+
+/* Markdown / Org text styling inside reports */
+.report-content h1,
+.report-content h2,
+.report-content h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #1f2937;
+}
+
+.report-content p {
+    margin: 0.5rem 0;
+}
+
+.report-content ul,
+.report-content ol {
+    margin: 0.5rem 0 0.5rem 1.5rem;
+}
+
+.report-content code {
+    background: #f3f4f6;
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.25rem;
+}
+
+.report-divider {
+    height: 1px;
+    background: #e5e7eb;
+    margin-top: 1.5rem;
+}

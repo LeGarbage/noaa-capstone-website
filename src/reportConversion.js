@@ -41,22 +41,38 @@ function renderReports() {
     const container = document.getElementById("reports")
     if (!container) return
 
-    const sortedWeeks = Object.keys(htmlStrings).sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+    const sortedWeeks = Object.keys(htmlStrings).sort((a, b) => b.localeCompare(a, undefined, { numeric: true }))
 
     sortedWeeks.forEach((week) => {
+        const match = week.match(/([a-zA-Z]+)(\d+)/)
+        let formattedWeek = week
+        if (match) {
+            const [, word, num] = match
+            formattedWeek = `${word.charAt(0).toUpperCase() + word.slice(1)} ${num}`
+        }
+
         const weekHeading = document.createElement("h2")
-        weekHeading.textContent = week
+        weekHeading.textContent = formattedWeek
+        weekHeading.classList.add("week-heading")
         container.appendChild(weekHeading)
 
-        const persons = htmlStrings[week]
-        for (const person in persons) {
+        const people = htmlStrings[week]
+        for (const person in people) {
             const personHeading = document.createElement("h3")
-            personHeading.textContent = person
+            personHeading.textContent = person.charAt(0).toUpperCase() + person.slice(1)
+            personHeading.classList.add("person-heading")
             container.appendChild(personHeading)
 
             const reportDiv = document.createElement("div")
-            reportDiv.innerHTML = persons[person]
+            reportDiv.innerHTML = people[person]
+            reportDiv.classList.add("report-content")
             container.appendChild(reportDiv)
+
+            if (person !== Object.keys(people).at(-1)) {
+                const divider = document.createElement("div")
+                divider.classList.add("report-divider")
+                container.appendChild(divider)
+            }
         }
     })
 }
