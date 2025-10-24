@@ -1,10 +1,10 @@
 @font-face {
-    src: url(assets/fonts/futura/FuturaStd-Medium.otf);
+    src: url(/assets/fonts/futura/FuturaStd-Medium.otf);
     font-family: Futura;
 }
 
 @font-face {
-    src: url(assets/fonts/futura/FuturaStd-Bold.otf);
+    src: url(/assets/fonts/futura/FuturaStd-Bold.otf);
     font-family: Futura;
     font-weight: bold;
 }
