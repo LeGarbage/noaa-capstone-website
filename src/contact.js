@@ -1,7 +1,3 @@
-import { createClient } from '@supabase/supabase-js'
-
-const supabase = createClient("https://zpnwozhwupxmmwiuythm.supabase.co", process.env.SUPABASE_KEY)
-
 document.getElementById("feedback-button").addEventListener("click", openFeedbackForm)
 
 const overlay = document.createElement('div')
@@ -79,13 +75,24 @@ form.addEventListener('submit', async (e) => {
         subject: form.elements["subject"].value.trim(),
         message: form.elements["message"].value.trim(),
     }
-    form.reset();
     overlay.style.display = 'none';
 
-    const { error } = await supabase.from('responses').insert(data)
+    try {
+        const response = await fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data),
+        });
 
-    if (error) {
-        alert("Something went wrong. Please try again later")
+        const result = await response.json();
+
+        if (!response.ok) throw new Error(result.error || 'Unknown error');
+
+        alert("Your feedback is appreciated");
+        form.reset();
+    } catch (err) {
+        console.error("Feedback send error:", err);
+        alert("Your feedback could not be processed");
     }
 });
 
