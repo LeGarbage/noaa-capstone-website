@@ -1,0 +1,37 @@
+* Work Completed
+  The main thing I did this week was the website feedback form. It took
+  longer than I expected because I switched platforms from mail-based to a
+  database.
+
+  I had to migrate the website from GitHub pages to Vercel to accommodate the
+  new backend, which honestly wasn't that hard. The hardest part was
+  designing the page itself and connecting the api to Supabase. Now the
+  feedback form works and I can see the results on the backend.
+
+  As for the capstone itself, I think my next issue is going to be the
+  hardest one yet as it combines everything I've worked on so far and adds
+  another layer of complexity in the form of thunks, which will allow me to
+  easily manage asynchronous requests from the remote zarr stores in the
+  future.
+
+* Challenges
+** The Form
+   Because of /questionable/ design decisions I made when first designing
+   this website, namely choosing to use vanilla HTML and CSS, I had to create
+   the from inside a JavaScript string to make it reusable across the entire
+   site. If I used something like react, it would've been a lot easier, but
+   at this point it is not worth the effort of rewriting the entire site.
+
+** Thunks
+   At this point, the thunks are just a theory, but from what I have
+   researched so far, they sound complicated. Anything asynchronous is
+   already complicated, but combining it with already complicated parts and
+   using it with zarr stores, which are complicated enough to warrant the
+   entire backend, compounds it greatly. I am not looking forward to next
+   week when I need to actually implement them.
+
+* For the future
+  One of the last tasks for milestone II is to implement the thunks that
+  will tie everything together. Like I said, it is looking to be the toughest
+  task yet, and will most likely going to take the longest as I work through
+  the API.
