@@ -1,0 +1,22 @@
+* Work Completed
+  This week, I have made steady progress on implementing thunks into the
+  website, although most of my work has been abstract. I have a framework that I
+  will be able to use to actually get the zarr stores from NOAA and handle the
+  asynchronous data. I learned a lot of things about thunks, and they are pretty
+  cool. They allow me to handle states of loading, idling, and failure with
+  minimal effort and will allow me to focus more on the actual data rendering as
+  opposed to the fetching itself.
+
+  The thunk implementation is very abstract and difficult, so that is all I have
+  been able to do.
+
+* Next Week
+  By the end of next week, I want to be able to take my thunk implementation and
+  use it on actual remote data. I think this will be a pretty lofty goal, as
+  adding actual data drastically increases complexity.
+
+** Foreseen Challenges
+   Right now, my biggest concern is that my thunk implementation is flawed and I
+   won't realize it until something breaks while I try to fetch the remote data,
+   making me rebuild the entire thing from the ground up. I think that this is
+   unlikely to happen, but it will really suck if it does end up happening.
