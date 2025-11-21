@@ -1,0 +1,17 @@
+* Work Completed
+  Milestone 2 is done! Although the thunk implementation took much longer
+  than I initially expected, I did meet last week's goal and was actually
+  able to successfully fetch some data from the S3 bucket and get the store's
+  shape to display on screen. This is huge because it means that all of the
+  backend stuff is finished and, apart from adding various fetchers for any
+  properties in the future, we can focus exclusively on the UI and UX from
+  now on, which will likely take us the rest of the capstone.
+
+  I also took a little time to document all of the backend APIs so it should
+  be trivial to add more in the future as needed.
+
+* Next week
+  I'm not planning on doing anything over break, but in the weeks between
+  Thanksgiving and Christmas I hope to have at least some data actually
+  rendered visually, even if it's just a visual representation of the store's
+  shape.
