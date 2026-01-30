@@ -1,0 +1,35 @@
+* Work Completed
+  Over the past 2 weeks, the dynamic loading and rendering of the data has
+  been mostly completed. The initial implementation was very buggy and
+  unperformant, although the initial rendering implementation remained
+  stable and did not break, which I was very happy about. As of now, the
+  visualization is mostly stable and performant, although there are
+  certainly many aspects which need to be improved in the coming weeks.
+
+* Challenges
+  - As always, React was the main source of challenge this week, as I had to
+    figure out how to get it to interact with the visualization in a way
+    that didn't tank performance. I actually had to read the documentation,
+    but that did help me choose the right hooks for each stage of the
+    render.
+  - Additionally, React3Fiber turned out to have many hidden performance
+    traps that I only managed to solve by, again, reading the documentation.
+
+* Next Week
+  Although the performance and stability of the visualization have
+    improved dramatically over the past two weeks, there are still a few
+    things that I need to do before I can call this feature done.
+  - *Performance.* I fixed the performance issue when panning around
+    existing tiles, but there is still a noticeable stutter when new tiles
+    are loaded for the first time. I have already tried to use some React
+    magic to load the tiles in the background, but that has not worked yet.
+  - *Bugs.* The single biggest issue with the visualization as it exists now
+    is that it occasionally tries to fetch data that does not exist. I have
+    not yet managed to reliably reproduce this bug, so I'm not sure exactly
+    how to fix it as of now.
+  - *Dynamic loading.* I'm pretty sure that the current visualization
+    fetches all of the data at once rather than grabbing it dynamically. The
+    tiles are definitely generated dynamically, but the data itself is not.
+    This will continue to be a bigger problem as the data becomes slower to
+    fetch when the resolution increases.
+

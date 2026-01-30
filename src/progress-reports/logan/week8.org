@@ -17,7 +17,7 @@
   like me not realizing that the DataTexture needs to be told to update, so
   it never rendered.
 
-* Next week
+* Next Week
   The main goal for next week is to get multiple data tiles rendered at the
   same time. If that ends up not being hard, I will attempt to implement
   dynamic loading, so new tiles are generated as the user pans around.
