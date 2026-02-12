@@ -1,0 +1,29 @@
+* Work Completed
+  The visualization is significantly more performant (with a pretty big
+  caveat). By better using React's tools, I was able to make the scrolling
+  experience much smoother at the cost of messing up the colors for some
+  unknown reason. I also changed my development from working on the most
+  zoomed out data to the most zoomed in, which has revealed many new bugs
+  and performance issues.
+
+* Challenges
+  There were several extremely frustrating issues that I encountered while
+    implementing the performance fixes.
+  - As I said, the colors are off in the new version. I have no idea why
+    this is happening, as I did not touch any of the texture generating
+    code. I added a band aid fix by just setting any nonexistent values to
+    black, which fixed the background color but not the data itself.
+  - Once I switched from the zoomed out to zoomed in data, I began
+    experiencing huge performance losses and glitchiness. The data seemed to
+    be rendering in random places. It turned out that when rendering the
+    data onto the tiles, I was flipping each tile individually, which worked
+    fine when the data fit onto one tile. However, the larger, zoomed out
+    data overflowed onto multiple tiles, which were ordered upside down. I
+    fixed this by unflipping the individual textures and instead flipping
+    the camera, which may or may not work long-term.
+
+* Next Week
+  I want to completely finish the visualization so that I can finally move
+  on to something else. My main focus is on the performance and stability of
+  the larger data, but once those are improved I'll be ready to move on.
+
